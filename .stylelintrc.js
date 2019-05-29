@@ -20,5 +20,6 @@ module.exports = {
         ignore: ['after-comment'],
       },
     ],
+    'scss/at-import-no-partial-leading-underscore': null,
   },
 };

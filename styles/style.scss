@@ -1,1 +1,17 @@
-@import '~bulma';
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap');
+
+// Set your brand colors
+$blue: rgb(29, 107, 253);
+
+// Update Bulma's global variables
+$family-sans-serif: 'Roboto Slab', serif;
+
+// Update some of Bulma's component variables
+$body-background-color: $blue;
+
+// Import only what you need from Bulma
+@import '~bulma/sass/utilities/_all';
+@import '~bulma/sass/base/_all';
