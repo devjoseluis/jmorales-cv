@@ -11,6 +11,17 @@
   },
   "homepage": "https://github.com/devjoseluis/jmorales-cv#readme",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "bulma": "^0.7.5"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.20.1",
+    "stylelint": "^10.0.1",
+    "stylelint-config-idiomatic-sass": "github:devjoseluis/stylelint-config-idiomatic-sass#feature/upgrade-dependencies",
+    "stylelint-config-standard": "^18.3.0"
   }
 }

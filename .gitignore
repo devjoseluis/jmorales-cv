@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# parcel-bundler output directory (https://parceljs.org/)
+dist/
+
+# parcel-bundler cache directory (https://parceljs.org/)
+.cache
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# dotenv environment variables file
+.env
+
+# Other files and folders
