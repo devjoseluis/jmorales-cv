@@ -12,12 +12,36 @@
   "homepage": "https://github.com/devjoseluis/jmorales-cv#readme",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "lint": "npm run lint:scripts && npm run lint:styles",
+    "lint:scripts": "eslint --ignore-pattern '!.*.js' --ignore-path .gitignore .",
+    "lint:styles": "stylelint '**/*.scss'"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run lint"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint",
+      "git add"
+    ],
+    "*.scss": [
+      "stylelint",
+      "git add"
+    ]
   },
   "dependencies": {
     "bulma": "^0.7.5"
   },
   "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
     "parcel-bundler": "^1.12.3",
     "sass": "^1.20.1",
     "stylelint": "^10.0.1",
