@@ -1,0 +1,16 @@
+{
+  "name": "jmorales-cv",
+  "description": "Online curriculum vitae jmorales-cv.web.app",
+  "author": "José Morales <devjoseluis@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devjoseluis/jmorales-cv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/devjoseluis/jmorales-cv/issues"
+  },
+  "homepage": "https://github.com/devjoseluis/jmorales-cv#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
