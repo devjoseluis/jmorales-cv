@@ -4,10 +4,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,900|Raleway:600&display=swap');
 
 // Set your brand colors
-$dark-pink: hsl(332, 100%, 40%);
+$blue: hsl(196, 100%, 36%);
 
 // Update Bulma's global variables
-$primary: $dark-pink;
+$primary: $blue;
 
 // Update some of Bulma's component variables
 $title-family: 'Raleway', sans-serif;
@@ -20,14 +20,33 @@ $subtitle-family: 'Lato', sans-serif;
 @import '~bulma/sass/elements/title';
 @import '~bulma/sass/layout/hero';
 
+.hero {
+  background-image: url('https://source.unsplash.com/j32YnXg_TQQ');
+  background-size: cover;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+    width: 100%;
+    height: 100%;
+    background: hsl(0, 0%, 7%);
+    content: '';
+  }
+}
+
 .hero-body {
   padding: 3rem 0.5rem;
 }
 
 .title.name {
   margin-top: 0;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.3rem;
+  color: $white;
   font-size: 2.25rem;
+  line-height: 1.1;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 
   @include from (22rem) {
     font-size: 2.5rem;
@@ -42,6 +61,7 @@ $subtitle-family: 'Lato', sans-serif;
   }
 
   @include from (37.5rem) {
+    margin-bottom: 0.6rem;
     font-size: 4rem;
     line-height: 1;
   }
@@ -60,6 +80,7 @@ $subtitle-family: 'Lato', sans-serif;
   font-weight: 900;
   font-size: 1rem;
   line-height: 1.565;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   letter-spacing: 0.2rem;
 
   @include from (25rem) {
@@ -82,7 +103,9 @@ $subtitle-family: 'Lato', sans-serif;
 
 .job-title {
   margin-bottom: 2rem;
+  color: $white;
   line-height: 2.4rem;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   letter-spacing: 0.2rem;
 
   @include from (22rem) {
@@ -91,5 +114,24 @@ $subtitle-family: 'Lato', sans-serif;
 
   @include from (37.5rem) {
     font-size: 1.3rem;
+  }
+
+  span {
+    &::after,
+    &::before {
+      display: inline-block;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: larger;
+      text-align: center;
+      content: '|';
+    }
+
+    &::after {
+      padding: 0 8px 0 14px;
+    }
+
+    &::before {
+      padding: 0 14px 0 8px;
+    }
   }
 }
