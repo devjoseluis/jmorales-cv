@@ -25,6 +25,7 @@ $subtitle-family: 'Lato', sans-serif;
 @import '~bulma/sass/layout/hero';
 
 .hero {
+  position: relative;
   background-image: url('https://source.unsplash.com/j32YnXg_TQQ');
   background-size: cover;
 
