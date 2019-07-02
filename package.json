@@ -11,8 +11,8 @@
   },
   "homepage": "https://github.com/devjoseluis/jmorales-cv#readme",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "start": "parcel index.njk",
+    "build": "parcel build index.njk",
     "lint": "npm run lint:scripts && npm run lint:styles",
     "lint:scripts": "eslint --ignore-pattern '!.*.js' --ignore-path .gitignore .",
     "lint:styles": "stylelint '**/*.scss'"
@@ -38,12 +38,14 @@
   },
   "devDependencies": {
     "eslint": "^5.3.0",
-    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-airbnb-base": "^13.2.0",
     "eslint-plugin-import": "^2.18.0",
-    "husky": "^2.4.1",
-    "lint-staged": "^8.2.1",
+    "husky": "^3.0.0",
+    "lint-staged": "^9.0.0",
+    "nunjucks": "^3.2.0",
     "parcel-bundler": "^1.12.3",
-    "sass": "^1.22.1",
+    "parcel-plugin-nunjucks": "^1.1.0",
+    "sass": "^1.22.2",
     "stylelint": "^10.1.0",
     "stylelint-config-idiomatic-sass": "github:devjoseluis/stylelint-config-idiomatic-sass#feature/upgrade-dependencies",
     "stylelint-config-standard": "^18.3.0"
