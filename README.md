@@ -1,5 +1,5 @@
 # jmorales-cv
-> Online curriculum vitae jmorales-cv.web.app
+> Online curriculum vitae [josemorales.dev](https://josemorales.dev)
 
 ## Building and running on localhost
 
