@@ -13,6 +13,18 @@
   <link rel="manifest" href="/site.webmanifest">
 
   <link rel="stylesheet" href="./styles/style.scss">
+
+  {% if env == 'production' %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143164066-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-143164066-1');
+    </script>
+  {% endif %}
 </head>
 <body>
   <section class="hero is-fullheight">
@@ -34,17 +46,17 @@
           Descargar CV
         </a>
         <p class="social buttons is-centered has-addons">
-          <a href="https://www.linkedin.com/in/devjoseluis" target="_blank" rel="noopener noreferrer" class="button is-primary is-inverted is-outlined" onClick="ga('send', 'event', 'CTAs', 'Click', 'LinkedIn', ,{'NonInteraction': 1});">
+          <a href="https://www.linkedin.com/in/devjoseluis" aria-label="Ver mi perfil en LinkedIn" target="_blank" rel="noopener noreferrer" class="button is-primary is-inverted is-outlined" onClick="ga('send', 'event', 'CTAs', 'Click', 'LinkedIn', ,{'NonInteraction': 1});">
             <span class="icon">
               <iconify-icon data-icon="mdi:linkedin"></iconify-icon>
             </span>
           </a>
-          <a href="https://github.com/devjoseluis" target="_blank" rel="noopener noreferrer" class="button is-primary is-inverted is-outlined" onClick="ga('send', 'event', 'CTAs', 'Click', 'Github', ,{'NonInteraction': 1});">
+          <a href="https://github.com/devjoseluis" aria-label="Ver mi perfil en Github" target="_blank" rel="noopener noreferrer" class="button is-primary is-inverted is-outlined" onClick="ga('send', 'event', 'CTAs', 'Click', 'Github', ,{'NonInteraction': 1});">
             <span class="icon">
               <iconify-icon data-icon="mdi:github-circle"></iconify-icon>
             </span>
           </a>
-          <a href="mailto:hola@josemorales.dev" class="button is-primary is-inverted is-outlined" onClick="ga('send', 'event', 'CTAs', 'Click', 'Mailto', ,{'NonInteraction': 1});">
+          <a href="mailto:hola@josemorales.dev" aria-label="Ponte en contacto hola@josemorales.dev" class="button is-primary is-inverted is-outlined" onClick="ga('send', 'event', 'CTAs', 'Click', 'Mailto', ,{'NonInteraction': 1});">
             <span class="icon">
               <iconify-icon data-icon="mdi:email-outline"></iconify-icon>
             </span>
@@ -59,7 +71,7 @@
         Hecho con 🖤 en <strong>Guatemala</strong>
       </p>
       <p>
-        Fuentes por <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer"><svg style="display: inline-block; vertical-align: middle;" width="121" height="22" version="1.1" id="google-fonts-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        Fuentes por <a href="https://fonts.google.com/" aria-label="Google Fonts" target="_blank" rel="noopener noreferrer"><svg style="display: inline-block; vertical-align: middle;" width="121" height="22" version="1.1" id="google-fonts-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 209.302 38.052" enable-background="new 0 0 209.302 38.052" xml:space="preserve"><g><path d="M14.976,29.52c-2.641,0-5.136-0.672-7.488-2.016c-2.352-1.32-4.188-3.12-5.508-5.4C0.66,19.848,0,17.4,0,14.76
            c0-2.616,0.66-5.052,1.98-7.308c1.344-2.304,3.18-4.116,5.508-5.436C9.84,0.672,12.335,0,14.976,0c3.888,0,7.26,1.356,10.116,4.068
            l-2.844,2.844c-2.064-1.919-4.488-2.88-7.272-2.88c-2.976,0-5.484,1.044-7.524,3.132c-2.041,2.064-3.06,4.596-3.06,7.596
@@ -122,7 +134,7 @@
         </a>
       </p>
       <p>
-        Código fuente en <a href="https://github.com/devjoseluis/jmorales-cv" target="_blank" rel="noopener noreferrer"><svg style="display: inline-block; vertical-align: top;" width="74" height="20" version="1.1" id="github-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        Código fuente en <a href="https://github.com/devjoseluis/jmorales-cv" aria-label="Repositorio en Github" target="_blank" rel="noopener noreferrer"><svg style="display: inline-block; vertical-align: top;" width="74" height="20" version="1.1" id="github-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 360.183 97.406" style="enable-background:new 0 0 360.183 97.406;" xml:space="preserve"><style type="text/css">.st0{fill:#100E0F;}</style><g><path class="st0" d="M69.373,41.69H39.105c-0.781,0-1.414,0.634-1.414,1.415v14.798c0,0.781,0.633,1.417,1.414,1.417h11.807v18.385
              c0,0-2.651,0.904-9.981,0.904c-8.648,0-20.728-3.16-20.728-29.723c0-26.569,12.579-30.065,24.388-30.065
              c10.222,0,14.626,1.8,17.429,2.667c0.88,0.269,1.695-0.607,1.695-1.388l3.376-14.298c0-0.366-0.124-0.806-0.54-1.105
@@ -152,16 +164,5 @@
     </div>
   </footer>
   <script src="https://code.iconify.design/1/1.0.2/iconify.min.js"></script>
-  {% if env == 'production' %}
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143164066-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-143164066-1');
-    </script>
-  {% endif %}
 </body>
 </html>
