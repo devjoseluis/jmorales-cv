@@ -10,6 +10,9 @@
     "url": "https://github.com/devjoseluis/jmorales-cv/issues"
   },
   "homepage": "https://github.com/devjoseluis/jmorales-cv#readme",
+  "engines": {
+    "node": ">=10.13 < 13.0"
+  },
   "scripts": {
     "start": "parcel index.njk",
     "build": "parcel build index.njk",
