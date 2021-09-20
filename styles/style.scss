@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@charset "utf-8";
 
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css?family=Lato:400,900|Raleway:600&display=swap');
@@ -16,6 +16,7 @@ $subtitle-family: 'Lato', sans-serif;
 // Import only what you need from Bulma
 @import '~bulma/sass/utilities/_all';
 @import '~bulma/sass/base/_all';
+@import '~bulma/sass/helpers/_all.sass';
 @import '~bulma/sass/elements/button';
 @import '~bulma/sass/elements/container';
 @import '~bulma/sass/elements/content';

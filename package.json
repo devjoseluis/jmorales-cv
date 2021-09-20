@@ -10,6 +10,9 @@
     "url": "https://github.com/devjoseluis/jmorales-cv/issues"
   },
   "homepage": "https://github.com/devjoseluis/jmorales-cv#readme",
+  "engines": {
+    "node": ">=10.13 < 13.0"
+  },
   "scripts": {
     "start": "parcel index.njk",
     "build": "parcel build index.njk",
@@ -34,20 +37,20 @@
     ]
   },
   "dependencies": {
-    "bulma": "^0.7.5"
+    "bulma": "^0.9.0"
   },
   "devDependencies": {
-    "eslint": "^5.3.0",
-    "eslint-config-airbnb-base": "^13.2.0",
-    "eslint-plugin-import": "^2.18.0",
-    "husky": "^3.0.0",
-    "lint-staged": "^9.0.0",
-    "nunjucks": "^3.2.0",
-    "parcel-bundler": "^1.12.3",
-    "parcel-plugin-nunjucks": "^1.1.0",
-    "sass": "^1.22.2",
-    "stylelint": "^10.1.0",
-    "stylelint-config-idiomatic-sass": "github:devjoseluis/stylelint-config-idiomatic-sass#feature/upgrade-dependencies",
-    "stylelint-config-standard": "^18.3.0"
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "nunjucks": "^3.2.2",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-nunjucks": "^2.2.1",
+    "sass": "^1.26.10",
+    "stylelint": "^13.6.1",
+    "stylelint-config-idiomatic-sass": "github:devjoseluis/stylelint-config-idiomatic-sass#v2.0.0",
+    "stylelint-config-standard": "^20.0.0"
   }
 }
